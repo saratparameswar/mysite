@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+{% load static %}
+<head>
+<meta charset="utf-8">
+  <h1 align="center"></h1>
+<title>Let's find you the Best Insurance</title>
+<style type="text/css">
+th {
+	color: #FFF;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+}
+body {
+	background-color:#993333;
+	color:white;
+  font-family:verdana;
+}
+
+</style>
+
+
+<!-- <script type="text/javascript" src="{% static 'quote-and-buy/script.js' %}"></script> -->
+
+</head>
+
+<body>
+<div style="text-align: center;"><h3>Tell us who would you like to Insure</h3></div>    
+<form>
+<table width="700" border="0" align="center" cellpadding="0" cellspacing="5">
+  <tr>
+    <th width="25%" height="60">&nbsp;</th>
+  </tr>
+  <tr>
+    <td><strong>Name:</strong></td>
+    <td><input name="name" type="text" size="35" required/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>DOB:</strong></td>
+    <td><input type="date" type="number" size="35" required/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Sex:</strong></td>
+    <td><input type="radio" name="gender" value="male" required>Male
+    	<input type="radio" name="gender" value="female">Female</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Do you use Tobacco?:</strong></td>
+    <td><input type="radio" name="tobacco" value="yes" required>Yes
+    	<input type="radio" name="tobacco" value="no">No</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Email:</strong></td>
+    <td><input name="Email" type="email" size="35" required/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Address:</strong></td>
+    <td><input name="name2" type="text" size="35" required/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Like to Insure:</strong></td>
+    <td><select   id="slct1" name="slct1" onchange= " populate(this.id,'slct2')" >
+	<option>Select..</option>
+    <option value="1">Me + Wife</option>
+    <option value="3">Me + Wife & 1 Child</option>
+      <option value="4">Me + Wife & 2 Child</option>
+      <option value="5">My Parents</option>
+      <option value="6">Other Members</option>
+      
+</select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Do you have an existing illness?</strong></td>
+    <td><select   id="slct1" name="slct1" onchange= " populate(this.id,'slct2')" >
+	<option>Select..</option>
+    <option value="1">Existing illness</option>
+    <option value="2">Covid 19</option>
+    <option value="3">Surgical Procedure</option>     
+</select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+ 
+ 
+  <tr>
+    <td><strong>Mobile Number:</strong></td>
+    <td><input name="Mobile no. name3" type="text" size="35"/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Are you an existing customer?:</strong></td>
+    <td><input type="radio" name="existing_customer" value="yes" required>Yes
+    	<input type="radio" name="existing_customer" value="no">No</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><input type="reset" /></td>
+    <td><input type="submit" value="Submit"  onsubmit= "alert('your details have been submitted!')"/></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+  <p align=center>Let's find you the Best Insurance.</p>
+</body>
+
+</html>
